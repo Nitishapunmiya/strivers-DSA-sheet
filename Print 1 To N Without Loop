@@ -1,0 +1,10 @@
+ int cnt=1;
+    void printNos(int n) {
+        if(cnt>n){
+            return;
+        }
+        cout << cnt << " ";
+        cnt++;
+         printNos(n);
+        
+    }
