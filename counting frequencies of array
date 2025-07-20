@@ -1,0 +1,21 @@
+class Solution {
+public:
+    vector<vector<int>> countFrequencies(vector<int>& nums) {
+        <int, int> freqMap;
+        
+
+        for (int num : nums) {
+            freqMap[num]++;
+        }
+
+  
+        vector<vector<int>> result;
+        for (auto& it : freqMap) {
+            result.push_back({it.first, it.second});
+        }
+
+        return result;
+
+
+    }
+};
