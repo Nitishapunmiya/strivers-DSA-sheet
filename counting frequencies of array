@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> countFrequencies(vector<int>& nums) {
-        <int, int> freqMap;
+         unordered_map<int, int> freqMap;
         
 
         for (int num : nums) {
