@@ -1,0 +1,24 @@
+class Solution {
+  public:
+    int getSecondLargest(vector<int> &arr) {
+         if (arr.size() < 2)
+            return -1;  
+        int maxi = INT_MIN;
+        for(int x: arr){
+            maxi=max(x,maxi);
+        }
+        int smax=INT_MIN;
+        for(int y: arr){
+            if (y != maxi){
+                smax=max(y,smax);
+            }
+        }
+        if(smax==INT_MIN){
+            return -1;
+        }
+
+        return smax;
+        
+        
+    }
+};
